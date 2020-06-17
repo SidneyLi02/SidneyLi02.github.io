@@ -36,7 +36,7 @@ html, body {
 
 .main-header{
     background-color: rgba(0,0,0,0.6);
-    background-image: url("Images/vancouver-skyline.jpg");
+    background-image: url("images/vancouver-skyline.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 250px;
