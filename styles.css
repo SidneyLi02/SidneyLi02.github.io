@@ -59,7 +59,9 @@ html, body {
 }
 
 .index-image {
-    margin: 10px
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .my-Name {
