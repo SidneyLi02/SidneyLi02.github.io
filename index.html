@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 
     <title>Sidney Li</title>
   </head>
@@ -15,6 +17,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
 
+          <!-- nav bar responsive -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
 
@@ -22,13 +25,13 @@
             <span class="navbar-brand h2">Sidney Li</span>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="about.html">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="projects.html">Projects</a>
               </li>
             </ul>
           </div>
@@ -36,6 +39,64 @@
       </nav>
 
 
+    <!-- carousel for images of vancouver, under navbar -->
+    <div id="slides" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#slides" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#slides" data-bs-slide-to="1"></li>
+        <li data-bs-target="#slides" data-bs-slide-to="2"></li>
+      </ol>
+
+      <!-- removed captions for now, add back someday later -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/van_olym.jpg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h1 class="display-2"></h1>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/van_cog.jpeg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h1 class="display-2"></h1>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="assets/img/van_qe.jpg" class="d-block w-100">
+          <div class="carousel-caption">
+            <h1 class="display-2"></h1>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#slides" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#slides" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <br>
+          <h1 class="display-4">Welcome to my personal webpage.</h1>
+        </div>
+        <div class="col-12">
+          <p class="lead">This website was made with love through HTML, CSS, and Bootstrap. As for its
+            contents, I do not know what this website will house. All I know for sure is 
+            that personal projects may be listed, and that I may make this a blog website one day?
+            Stay tuned for more details as I figure my way out through this, and check in 
+            every once in a while.</p>
+            <br>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
